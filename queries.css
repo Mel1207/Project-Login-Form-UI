@@ -1,0 +1,40 @@
+@media screen and (max-width: 1200px) {
+  .form-actions {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form-container {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 85%;
+  }
+
+  .wrapper::before {
+    width: 100%;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
