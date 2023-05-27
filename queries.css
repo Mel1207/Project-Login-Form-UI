@@ -16,6 +16,10 @@
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    background: var(--primary-color);
+  }
+
   .container {
     width: 85%;
   }
