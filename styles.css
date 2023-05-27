@@ -189,6 +189,13 @@ input::placeholder {
   border: 1px solid var(--primary-color);
   background: none;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-actions .button-secondary img {
+  margin-right: 5px !important;
 }
 
 .new-user-link {
