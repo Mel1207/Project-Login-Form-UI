@@ -41,4 +41,9 @@
   .container {
     width: 100%;
   }
+
+  body {
+    margin: 20px 0;
+    height: auto;
+  }
 }
