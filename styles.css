@@ -135,16 +135,24 @@ input::placeholder {
   line-height: 20px;
 }
 
+/* CUSTOMIZING CHECKBOX */
 .form-group-checkbox {
+  display: block;
   position: relative;
+  cursor: pointer;
   padding-left: 28px;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form-group-checkbox input{
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   opacity: 0;
@@ -159,11 +167,45 @@ input::placeholder {
   border: 1px solid var(--border-color);
 }
 
+.form-group-checkbox:hover input ~ .checkbox {
+  background: #f1f1f1;
+}
+
+.form-group-checkbox input:checked ~ .checkbox {
+  background: var(--link-color);
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-group-checkbox input:checked ~ .checkbox::after {
+  display: block;
+}
+
+.form-group-checkbox input:checked ~ .checkbox{
+  border: none;
+}
+
+/* CHECKBOX ICON */
+.form-group-checkbox .checkbox::after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 8px;
+  border: solid var(--cWhite);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .form-actions {
   display: flex;
   gap: 27px;
 }
-
 
 .form-actions button {
   font-family: inherit;
